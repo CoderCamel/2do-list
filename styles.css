@@ -1,0 +1,19 @@
+* {
+    outline: 1px solid green;
+    font-family: "Lato";
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activity-item {
+    background-color: blue;
+    width: 200px;
+}
+
+.green-behind {
+    background: green;
+}

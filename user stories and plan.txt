@@ -1,0 +1,9 @@
+user stories:
+- I can enter some text and then press enter or a button, and that text gets added as a 2do item
+- all my 2do items are listed underneath the text field
+- I can mark an activity as finished by clicking the button on that activity
+- there are cool animations when adding an activity, and when marking one as complete
+
+things to add
+- consistent width of activity divs
+- maximum input character length
