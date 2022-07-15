@@ -1,6 +1,15 @@
 * {
-    outline: 1px solid green;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+/*    outline: 1px solid green;
     font-family: "Lato";
+*/
+}
+
+h1 {
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 #container {
@@ -9,11 +18,33 @@
     align-items: center;
 }
 
-.activity-item {
-    background-color: blue;
-    width: 200px;
+#input-div {
+    margin-bottom: 50px;
 }
 
-.green-behind {
-    background: green;
+.activity-item {
+    margin-bottom: 10px;
+
+    height: 50px;
+    width: 300px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #e0e0e0;
+}
+
+.activity-text {
+    margin-left: 20px;
+    align-self: center;
+}
+
+.done-button {
+    margin: 0px;
+    border: none;
+    width: 50px;
+    border-radius: 8px;
+    color: white;
+    background-color: #2f80ed;
 }
