@@ -43,6 +43,13 @@ function addActivity() {
     const doneButton = document.createElement("button");
     doneButton.innerHTML = "Done";
     doneButton.classList.add("done-button");
+    doneButton.addEventListener("click", () => {
+        activityItem.setAttribute("id", "fadeout");
+        setTimeout(() => {
+            activityItem.remove();
+        }, 2000);
+    });
+
 
     activityItem.appendChild(activityText);
     activityItem.appendChild(editButton);

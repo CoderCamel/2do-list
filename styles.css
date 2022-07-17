@@ -1,5 +1,5 @@
 :root {
-    --light: #EEE;
+    --light: #f2f2f2;
     --shadow: lightgrey;
     --blue: #2f80ed;
     --bluehover: #448EEF;
@@ -9,10 +9,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-/*  
-    outline: 1px solid green;
-    font-family: "Lato";
-*/
 }
 
 body {
@@ -103,4 +99,21 @@ button:hover {
     cursor: pointer;
 }
 
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+    }
+}
 
+#fadeout {
+    animation-name: disappear;
+    animation-duration: 2s;
+}
