@@ -57,5 +57,6 @@ function addActivity() {
     activityItem.appendChild(editButton);
     activityItem.appendChild(doneButton);
     activities.appendChild(activityItem);
-
+    activityItem.setAttribute("id", "fadein");
+    activityText.setAttribute("id", "textfadein");
 }

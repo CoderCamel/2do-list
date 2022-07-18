@@ -108,6 +108,15 @@ button:hover {
     }
 }
 
+@keyframes text-appear {
+    0% {
+        color: var(--light);
+    }
+    100% {
+        color: black;
+    }
+}
+
 @keyframes disappear {
     0% {
         opacity: 1;
@@ -124,6 +133,21 @@ button:hover {
     }
 }
 
+@keyframes appear {
+    0% {
+        margin-bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 #fadeout {
     animation-name: disappear;
     animation-duration: 2s;
@@ -133,3 +157,14 @@ button:hover {
     animation-name: text-disappear;
     animation-duration: 2s;
 }
+
+#fadein {
+    animation-name: appear;
+    animation-duration: 1s;
+}
+
+#textfadein {
+    animation-name: text-appear;
+    animation-duration: 1s;
+}
+
