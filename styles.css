@@ -99,6 +99,15 @@ button:hover {
     cursor: pointer;
 }
 
+@keyframes text-disappear {
+    50% {
+        color: var(--light);
+    }
+    100% {
+        color: var(--light);
+    }
+}
+
 @keyframes disappear {
     0% {
         opacity: 1;
@@ -111,10 +120,16 @@ button:hover {
         opacity: 0;
         visibility: hidden;
         height: 0;
+        
     }
 }
 
 #fadeout {
     animation-name: disappear;
+    animation-duration: 2s;
+}
+
+#textfadeout {
+    animation-name: text-disappear;
     animation-duration: 2s;
 }

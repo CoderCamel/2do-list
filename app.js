@@ -45,6 +45,8 @@ function addActivity() {
     doneButton.classList.add("done-button");
     doneButton.addEventListener("click", () => {
         activityItem.setAttribute("id", "fadeout");
+        activityText.setAttribute("id", "textfadeout");
+
         setTimeout(() => {
             activityItem.remove();
         }, 2000);
